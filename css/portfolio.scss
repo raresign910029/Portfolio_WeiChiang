@@ -13,3 +13,14 @@ body{
 .remove{
     display: none;
 }
+
+footer{
+    .copyrigth{
+        padding-top: 20px;
+        p{
+            text-align: center;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+}
