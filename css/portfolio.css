@@ -5,4 +5,12 @@ body {
 .card {
   margin-top: 15px;
 }
+
+.resume {
+  text-align: justify;
+}
+
+.remove {
+  display: none;
+}
 /*# sourceMappingURL=portfolio.css.map */
