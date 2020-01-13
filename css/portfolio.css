@@ -27,6 +27,16 @@ body {
   pointer-events: none;
 }
 
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+
+.bg-middle {
+  background-color: #f8f8f8;
+}
+
 footer .copyrigth {
   padding-top: 20px;
 }

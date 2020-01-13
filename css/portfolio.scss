@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    
+   
 }
 
 .card{
@@ -30,6 +32,15 @@ body{
         }
     }
 }
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+.bg-middle{
+    background-color:#f8f8f8 ;
+}
+
 
 footer{
     .copyrigth{
@@ -41,6 +52,8 @@ footer{
         }
     }
 }
+
+// #f8f8f8
 
 
 
