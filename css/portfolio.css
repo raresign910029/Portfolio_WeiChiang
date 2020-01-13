@@ -23,6 +23,10 @@ body {
   background-color: #141414b4;
 }
 
+.container nav .navbar-brand {
+  pointer-events: none;
+}
+
 footer .copyrigth {
   padding-top: 20px;
 }
