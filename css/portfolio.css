@@ -1,5 +1,25 @@
 body {
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+.little_component .container {
+  position: relative;
+}
+
+.little_component .container .go-top {
+  position: absolute;
+  position: fixed;
+  top: 80vh;
+  right: 10px;
+  z-index: 5;
+}
+
+.little_component .container .go-top:hover {
+  -webkit-transform: scaleX(1.2) scaleY(1.2);
+          transform: scaleX(1.2) scaleY(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .card {

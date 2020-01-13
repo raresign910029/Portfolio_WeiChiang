@@ -11,12 +11,20 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 
     <title>WeiChiang's Portfolio</title>
 </head>
 
 <body>
+    <section id="top">
+        <div class="little_component">
+            <div class="container">
+                <i class="go-top fas fa-arrow-circle-up fa-3x" id="back_top" title="回到頁首"></i>
+            </div>
+        </div>
+    </section>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Portfolio -- Liao © </a>
@@ -33,6 +41,10 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link hvr-float-shadow" href="#" id="Portfolio_btn">作品集 <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" style="display:none">
+                        <a class="nav-link hvr-float-shadow" href="#top" id="top_btn">升至最頂 <span
                                 class="sr-only">(current)</span></a>
                     </li>
 
@@ -53,7 +65,7 @@
                             <hr style="float: right;" class="section-heading-spacer">
                             <div style="text-align: right;" class="clearfix">&nbsp;</div>
 
-                            <h2 style="text-align: right;">關於我</h2>
+                            <h2 style="text-align: right;">About Me</h2>
 
                             <span style="text-align: right;"
                                 class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是<span
@@ -76,7 +88,7 @@
                         <div class="bg-middle">
                             <hr style="float: left;" class="section-heading-spacer">
                             <div style="text-align: left;" class="clearfix">&nbsp;</div>
-                            <h2>重要經歷：</h2>
+                            <h2>Experience</h2>
                             <p><span class="badge badge-success">2019/10 ~ 至今</span>：大數據系統開發-全端與Python資料探勘工程師養成班
                                 學會以下技能： <br>前端：<span class="badge badge-info">HTML/CSS/JS</span> <br>後端：<span
                                     class="badge badge-danger">PHP(Laravel Frame work) /MySQL</span>
@@ -118,7 +130,7 @@
                         <div class="bg-middle">
                             <hr style="float: left;" class="section-heading-spacer">
                             <div  class="clearfix">&nbsp;</div>
-                            <h2 style="text-align: left;">聯絡資訊：</h2>
+                            <h2 style="text-align: left;">Contact</h2>
                             <div class="row ">
                                 <div class="col-12 col-sm-5 order ">
                                     <p > 1.姓名：廖偉強<br>
@@ -287,6 +299,16 @@
 
             Portfolio.classList.remove('remove');
             aboutMe.classList.add('remove');
+        }
+
+        var back_top = document.querySelector('#back_top');
+        var top_btn = document.querySelector('#top_btn');
+        
+
+        back_top.onclick = function () {
+            console.log(top_btn)
+            top_btn.click();
+
         }
     </script>
 
