@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/hover-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
+  
 
     <title>Wei Chiang Liao ©</title>
 </head>
@@ -264,6 +264,7 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -289,6 +290,8 @@
 
             aboutMe.classList.remove('remove');
             Portfolio.classList.add('remove');
+            refresh_go_top();
+
 
 
         }
@@ -297,6 +300,8 @@
 
             Portfolio.classList.remove('remove');
             aboutMe.classList.add('remove');
+            refresh_go_top();
+
         }
 
         var back_top = document.querySelector('#back_top');
@@ -306,10 +311,25 @@
         back_top.onclick = function () {
             console.log(top_btn)
             top_btn.click();
+            refresh_go_top();
 
         }
-    </script>
+        
+        function refresh_go_top() {
+           
+            back_top.classList.remove('active');
+            
+            setTimeout(function () {
+            back_top.classList.add('active');
+            }, 3000)
 
+        }
+
+        refresh_go_top()
+        
+        
+    </script>
+    
 </body>
 
 </html>

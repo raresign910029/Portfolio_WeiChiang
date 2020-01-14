@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 .little_component .container {
@@ -11,8 +14,10 @@ body {
   position: absolute;
   position: fixed;
   top: 80vh;
-  right: 10px;
+  right: 0px;
   z-index: 5;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .little_component .container .go-top:hover {
@@ -20,6 +25,14 @@ body {
           transform: scaleX(1.2) scaleY(1.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.little_component .container .go-top.active {
+  opacity: 1;
+  right: 10px;
+  pointer-events: unset;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .card {
